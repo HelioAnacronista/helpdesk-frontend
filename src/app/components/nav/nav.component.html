@@ -28,10 +28,13 @@
     </mat-drawer>
   
     <div class="sidenav-content">
+      <!-- Faz o header a companhar o menu e seus componentes -->
       <app-header></app-header>
+      <!--Botão de menu -->
       <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
         <mat-icon>menu</mat-icon>
      </button>
+     <!--Com outlet ele faz os componentes que tem dentro de rotas (as 'filhas' etc...) serem renderizando a partir dele-->
      <router-outlet></router-outlet>
     </div>
   

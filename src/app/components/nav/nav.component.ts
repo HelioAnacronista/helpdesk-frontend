@@ -10,6 +10,7 @@ export class NavComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  //faz as '/' serem redirecionado para o home
   ngOnInit(): void {
     this.router.navigate(['home'])
   }
