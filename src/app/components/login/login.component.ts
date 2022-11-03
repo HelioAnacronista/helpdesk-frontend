@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit {
       //Se a resposta chegar faça isso <-
       //this.toast.info(resposta.headers.get('Authorization'))
         this.service.succesfulLogin(resposta.headers.get('Authorization').substring(7));
-        //Quando termina de atenticar vai navegar para o componente nav 
+        //Quando termina de fazer a autenticação vai navegar para o componente nav 
         this.router.navigate([''])
     }, () => {
       this.toast.error('Usuario e/ou senha invalidos');

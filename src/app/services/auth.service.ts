@@ -33,7 +33,7 @@ export class AuthService {
     }
     return false
   }
-
+  //Limpar o token e info do usuario
   logout() {
     localStorage.clear();
   }
