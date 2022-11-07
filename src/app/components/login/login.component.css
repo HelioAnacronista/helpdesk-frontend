@@ -1,6 +1,6 @@
 .container {
     height: 100%;
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgb(46, 51, 60) 0%, rgb(196, 196, 196) 100%);
+    background-color: rgba(3, 6, 15, 0.107);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,10 +14,13 @@
     border-radius: 1rem;
  }
  
- h1 {
-    width: 100%;
-    text-align: center;
-    
+ .tiltle-center {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 35px;
+   color: #1A202C;
  }
  
  img {
@@ -35,5 +38,14 @@
  }
  
  mat-icon {
-    opacity: .6;
+    opacity: 0.6;
+ }
+
+ h4 {
+   color: #2D3748;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19px;
  }
