@@ -1,3 +1,4 @@
+import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { AuthGuard } from './auth/auth.guard';
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
@@ -11,7 +12,11 @@ const routes: Routes = [
   //AuthGuard que configuramos vai fala quem pode entrar ou não
   {path: '', component : NavComponent, canActivate:[AuthGuard], children: 
   [ {path: 'home', component: HomeComponent},
-    {path: 'tecnicos', component: TecnicoListComponent} ]
+
+    {path: 'tecnicos', component: TecnicoListComponent},
+    {path: 'tecnicos/create', component: TecnicoCreateComponent}
+    
+  ]
   },
 
 
