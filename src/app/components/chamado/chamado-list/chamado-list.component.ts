@@ -11,7 +11,9 @@ import { ChamadoService } from 'src/app/services/chamado.service';
 })
 export class ChamadoListComponent implements OnInit {
 
+  //Lista com todos os dados
   ELEMENT_DATA: Chamado[] = []
+  //Lista de dados filtrados
   FILTERED_DATA: Chamado[] = []
 
   displayedColumns: string[] = ['id', 'titulo', 'cliente', 'tecnico', 'dataAbertura', 'prioridade', 'status', 'acoes'];
