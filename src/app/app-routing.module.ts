@@ -1,27 +1,29 @@
 
 import { AuthGuard } from './auth/auth.guard';
 
-//Views componentes
+//ViewsComponent
 import { HomeComponent } from './components/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-//Tecnicos
+//TecnicosComponent
 import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
-//Login
+//LoginComponent
 import { LoginComponent } from './components/login/login.component';
 //ClienteComponent
 import { ClienteListComponent } from './components/cliente/cliente-list/cliente-list.component';
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+//ChamandoComponent
 import { ChamadoListComponent } from './components/chamado/chamado-list/chamado-list.component';
 import { ChamadoCreateComponent } from './components/chamado/chamado-create/chamado-create.component';
 import { ChamadoUpdateComponent } from './components/chamado/chamado-update/chamado-update.component';
+import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-read.component';
 
 
 
@@ -43,12 +45,11 @@ const routes: Routes = [
     
     {path: 'chamados',             component: ChamadoListComponent},
     {path: 'chamados/create',      component: ChamadoCreateComponent},
-    {path: 'chamados/update/:id',      component: ChamadoUpdateComponent}
+    {path: 'chamados/update/:id',  component: ChamadoUpdateComponent},
+    {path: 'chamados/read/:id',    component: ChamadoReadComponent}
     
   ]
   },
-
-
 ];
 
 @NgModule({
