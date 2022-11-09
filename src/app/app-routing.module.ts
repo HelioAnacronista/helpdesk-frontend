@@ -1,5 +1,5 @@
 import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
-import { TecnicosUpdateComponent } from './components/tecnicos/tecnicos-update/tecnicos-update.component';
+import { TecnicosUpdateComponent } from './components/tecnico/tecnicos-update/tecnicos-update.component';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
 import { AuthGuard } from './auth/auth.guard';
 import { HomeComponent } from './components/home/home.component';
