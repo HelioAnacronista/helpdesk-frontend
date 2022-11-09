@@ -13,6 +13,7 @@ export class TecnicoListComponent implements OnInit {
   //Rede de data para a tebela
   ELEMENT_DATA: Tecnico[] = []
 
+  //Colunas que tem nossa tabela
   displayedColumns: string[] = ['id', 'nome', 'cpf', 'email', 'acoes'];
   dataSource = new MatTableDataSource<Tecnico>(this.ELEMENT_DATA);
   
