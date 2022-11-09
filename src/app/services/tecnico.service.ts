@@ -13,6 +13,11 @@ export class TecnicoService {
     private http: HttpClient
   ) { }
 
+  //Puxa por id
+  findById(id: any): Observable<Tecnico>{
+    return this.http.get<Tecnico>(`${API_CONFIG.baseUrl}/tecnicos/${id}`);
+  }
+
   //Faz a requisição e traz um arry de tecnico
   findAll(): Observable<Tecnico[]>{
     return this.http.get<Tecnico[]>(`${API_CONFIG.baseUrl}/tecnicos`);
@@ -21,5 +26,10 @@ export class TecnicoService {
   //envia umas requisição para criar uma tecnico na base de dados
   create(tecnico: Tecnico): Observable<Tecnico> {
     return this.http.post<Tecnico>(`${API_CONFIG.baseUrl}/tecnicos`, tecnico);
+  }
+
+  //Atualiza o tecnico do id
+  update(tecnico: Tecnico): Observable<Tecnico> {
+    return this.http.put<Tecnico>(`${API_CONFIG.baseUrl}/tecnicos/${tecnico.id}`, tecnico);
   }
 }
