@@ -65,7 +65,7 @@ export class TecnicoCreateComponent implements OnInit {
     }
   }
   
-  //Método para Validar
+  //Método para Validar no html de input
   validaCampos(): boolean {
     return this.nome.valid && this.cpf.valid
      && this.email.valid && this.senha.valid
